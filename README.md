@@ -21,11 +21,11 @@ In normalized form, the kernels are:
 
 # Usage Example
 
-    using SmoothingKernels, Stats
+    using SmoothingKernels, StatsBase
 
     x = randn(100)
 
-    h = Stats.bandwidth(x)
+    h = StatsBase.bandwidth(x)
 
     λ = 1 / h
 
